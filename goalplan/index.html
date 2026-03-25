@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Напоминалка⏰</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="https://img.freepik.com/premium-vector/ringing-alarm-clock-with-two-bells-illustration-cartoon-isolated-dinamic-image-green-yellow-color-morning-alarm-clock_124848-425.jpg" type="image/jpeg">
+  
+</head>
+<body class="bg-light">
+
+<div class="container py-4">
+  <h1 class="mb-4 text-center">🎯 Мои цели</h1>
+
+  <!-- Добавление цели -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Добавить цель</h5>
+      <form id="goalForm">
+        <div class="row g-2">
+          <div class="col-md-5">
+            <input type="text" id="title" class="form-control" placeholder="Название" required>
+          </div>
+          <div class="col-md-5">
+            <input type="text" id="description" class="form-control" placeholder="Описание">
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary w-100">Добавить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Список целей -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Список целей</h5>
+      <ul id="goalList" class="list-group"></ul>
+    </div>
+  </div>
+
+  <!-- Статистика -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">📊 Статистика</h5>
+      <p id="stats"></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
